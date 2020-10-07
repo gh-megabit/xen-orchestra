@@ -251,27 +251,6 @@ export default class XoApp extends Component {
                   </Link>
                 </div>
               )}
-              {plan === 'Community' && !this.state.dismissedSourceBanner && (
-                <div className='alert alert-danger mb-0'>
-                  <a
-                    href='https://xen-orchestra.com/#!/xoa?pk_campaign=xo_source_banner'
-                    rel='noopener noreferrer'
-                    target='_blank'
-                  >
-                    {_('disclaimerText3')}
-                  </a>{' '}
-                  <a
-                    href='https://xen-orchestra.com/docs/installation.html#banner-and-warnings'
-                    rel='noopener noreferrer'
-                    target='_blank'
-                  >
-                    {_('disclaimerText4')}
-                  </a>
-                  <button className='close' onClick={this.dismissSourceBanner}>
-                    &times;
-                  </button>
-                </div>
-              )}
               <div style={CONTAINER_STYLE}>
                 <Shortcuts
                   name='XoApp'
